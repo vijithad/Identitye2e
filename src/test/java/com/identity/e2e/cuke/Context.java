@@ -1,9 +1,5 @@
 package com.identity.e2e.cuke;
 
-/**
- * Created by I316082 on 19/05/2018.
- */
-
 import java.util.HashMap;
 import java.util.Map;
 

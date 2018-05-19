@@ -29,19 +29,19 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">3</div>
+<div class="counter">0</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.730s</div>
+<div class="counter">3.572s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">0%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,233 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="classMethod"></a>
-<h3 class="failures">classMethod</h3>
-<span class="code">
-<pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: '15MBP-13042', ip: 'fe80:0:0:0:14a4:1397:bfa7:1120%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {userDataDir: /var/folders/d8/f2c5km114mz...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: true, platform: MAC, platformName: MAC, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: a9154a8112b5f659c0de961403008b7e
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:743)
-	at com.identity.e2e.cuke.Hooks.init(Hooks.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.IOException: unexpected end of stream on Connection{localhost:10108, proxy=DIRECT hostAddress=localhost/127.0.0.1:10108 cipherSuite=none protocol=http/1.1}
-	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
-	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:104)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:54)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:157)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	... 63 more
-Caused by: java.io.EOFException: \n not found: limit=0 content=…
-	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
-	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
-	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
-	... 82 more
-</pre>
-</span>
-<span class="code">
-<pre>org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: '15MBP-13042', ip: 'fe80:0:0:0:14a4:1397:bfa7:1120%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {userDataDir: /var/folders/d8/f2c5km114mz...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: true, platform: MAC, platformName: MAC, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: a9154a8112b5f659c0de961403008b7e
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:497)
-	at com.identity.e2e.cuke.Hooks.embedScreenshot(Hooks.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.net.ConnectException: Failed to connect to localhost/127.0.0.1:10108
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:240)
-	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:158)
-	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:256)
-	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:134)
-	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:113)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:104)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:54)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:157)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	... 63 more
-Caused by: java.net.ConnectException: Connection refused (Connection refused)
-	at java.net.PlainSocketImpl.socketConnect(Native Method)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:589)
-	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:125)
-	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:238)
-	... 84 more
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -298,237 +81,43 @@ Caused by: java.net.ConnectException: Connection refused (Connection refused)
 </tr>
 </thead>
 <tr>
-<td class="skipped">Given there are 4 xslx files and 6 csv files and a txt file containing 5 vehicles each</td>
-<td>-</td>
-<td class="skipped">ignored</td>
+<td class="success">Given there are 4 xslx files and 6 csv files and a txt file containing 5 vehicles each</td>
+<td>0s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="skipped">Then only 50 vehicles are returned</td>
-<td>-</td>
-<td class="skipped">ignored</td>
+<td class="success">Then only 50 vehicles are returned</td>
+<td>0s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="skipped">When get vehicles is called</td>
-<td>-</td>
-<td class="skipped">ignored</td>
+<td class="success">When get vehicles is called</td>
+<td>0s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">classMethod</td>
-<td>3.730s</td>
-<td class="failures">failed</td>
+<td class="success">classMethod</td>
+<td>3.572s</td>
+<td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>?[31mFailure in before hook:?[0m?[31mHooks.init()?[0m
-?[31mMessage: ?[0m?[31morg.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-System info: host: '15MBP-13042', ip: 'fe80:0:0:0:14a4:1397:bfa7:1120%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
-Driver info: driver.version: RemoteWebDriver
-Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {userDataDir: /var/folders/d8/f2c5km114mz...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: true, platform: MAC, platformName: MAC, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, version: 66.0.3359.181, webStorageEnabled: true}
-Session ID: a9154a8112b5f659c0de961403008b7e
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:743)
-	at com.identity.e2e.cuke.Hooks.init(Hooks.java:34)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
-	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-	at java.lang.Thread.run(Thread.java:748)
-Caused by: java.io.IOException: unexpected end of stream on Connection{localhost:10108, proxy=DIRECT hostAddress=localhost/127.0.0.1:10108 cipherSuite=none protocol=http/1.1}
-	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
-	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-	at okhttp3.RealCall.execute(RealCall.java:77)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:104)
-	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:54)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:157)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-	... 63 more
-Caused by: java.io.EOFException: \n not found: limit=0 content=…
-	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
-	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
-	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
-	... 82 more
-?[0m
-      ?[31morg.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-      Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
-      System info: host: '15MBP-13042', ip: 'fe80:0:0:0:14a4:1397:bfa7:1120%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.4', java.version: '1.8.0_131'
-      Driver info: driver.version: RemoteWebDriver
-      Capabilities {acceptSslCerts: true, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {userDataDir: /var/folders/d8/f2c5km114mz...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, javascriptEnabled: true, locationContextEnabled: true, nativeEvents: true, platform: MAC, platformName: MAC, rotatable: false, takesHeapSnapshot: true, takesScreenshot: true, version: 66.0.3359.181, webStorageEnabled: true}
-      Session ID: a9154a8112b5f659c0de961403008b7e
-      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
-      	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:743)
-      	at com.identity.e2e.cuke.Hooks.init(Hooks.java:34)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-      	at java.lang.reflect.Method.invoke(Method.java:498)
-      	at cucumber.runtime.Utils$1.call(Utils.java:40)
-      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-      	at cucumber.runtime.Utils.invoke(Utils.java:34)
-      	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
-      	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
-      	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
-      	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
-      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
-      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
-      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
-      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
-      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
-      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
-      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
-      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
-      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
-      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
-      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
-      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
-      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
-      	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
-      	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
-      	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
-      	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
-      	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-      	at java.lang.reflect.Method.invoke(Method.java:498)
-      	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-      	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-      	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
-      	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
-      	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
-      	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-      	at java.lang.reflect.Method.invoke(Method.java:498)
-      	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
-      	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-      	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
-      	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
-      	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
-      	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
-      	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
-      	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
-      	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
-      	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
-      	at java.lang.Thread.run(Thread.java:748)
-      Caused by: java.io.IOException: unexpected end of stream on Connection{localhost:10108, proxy=DIRECT hostAddress=localhost/127.0.0.1:10108 cipherSuite=none protocol=http/1.1}
-      	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:205)
-      	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.java:88)
-      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-      	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:45)
-      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-      	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
-      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-      	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
-      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-      	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:125)
-      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
-      	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
-      	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
-      	at okhttp3.RealCall.execute(RealCall.java:77)
-      	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:104)
-      	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:54)
-      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:157)
-      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
-      	... 63 more
-      Caused by: java.io.EOFException: \n not found: limit=0 content=…
-      	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.java:227)
-      	at okhttp3.internal.http1.Http1Codec.readHeaderLine(Http1Codec.java:212)
-      	at okhttp3.internal.http1.Http1Codec.readResponseHeaders(Http1Codec.java:189)
-      	... 82 more
-      ?[0m
+<pre>2018-05-19 16:35:40.960  INFO 22721 --- [ null to remote] o.o.selenium.remote.ProtocolHandshake    : Detected dialect: OSS
+----------xlsxFiles--4
+----------csvFiles--6
+----------textFiles--5
+----------implement me--
 </pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>Starting ChromeDriver (v2.9.248307) on port 10108
-[warn] kq_init: detected broken kqueue; not using.: Undefined error: 0
-May 19, 2018 3:10:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: OSS
+<pre>Starting ChromeDriver 2.38.552518 (183d19265345f54ce39cbb94cf81ba5f15905011) on port 7602
+Only local connections are allowed.
 </pre>
 </span>
 </div>
@@ -540,7 +129,7 @@ INFO: Detected dialect: OSS
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.5.1</a> at 19-May-2018 15:10:10</p>
+<a href="http://www.gradle.org">Gradle 4.5.1</a> at 19-May-2018 16:35:47</p>
 </div>
 </div>
 </body>

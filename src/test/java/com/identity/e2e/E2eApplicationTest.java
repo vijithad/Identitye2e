@@ -1,4 +1,4 @@
-package com.identity.e2e.cuke;
+package com.identity.e2e;
 
 import com.identity.e2e.model.E2eFile;
 import com.identity.e2e.model.FileTypeEnum;
@@ -41,7 +41,7 @@ public class E2eApplicationTest {
         files.forEach(file -> {
             Assert.assertTrue("",file.getExtension().equalsIgnoreCase(FileTypeEnum.CSV.name()));
             Assert.assertTrue("", file.getName().endsWith( FileTypeEnum.CSV.type.toLowerCase()));
-            Assert.assertThat(file.getSize(),is(Long.valueOf(70)));
+            Assert.assertThat(file.getSize(),is(Long.valueOf(68)));
             Assert.assertTrue("",file.getMimeType().equals("application/octet-stream"));
             Assert.assertThat(file.getFile(), is(notNullValue()));
         });
