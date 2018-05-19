@@ -4,16 +4,16 @@ public class Vehicle {
 
     private final String registration;
     private final String make;
-    private final String model;
+    private final String color;
 
-    public Vehicle(final String registration, final String make, final String model) {
+    public Vehicle(final String registration, final String make, final String color) {
         this.registration = registration;
         this.make = make;
-        this.model = model;
+        this.color = color;
     }
 
     public String getModel() {
-        return model;
+        return color;
     }
 
     public String getMake() {
