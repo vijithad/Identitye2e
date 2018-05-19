@@ -1,0 +1,38 @@
+plugins {
+    id 'org.springframework.boot' version '2.0.2.RELEASE'
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.springframework.boot:spring-boot-starter'
+    compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-tomcat'
+    testCompile 'org.seleniumhq.selenium:selenium-server:2.44.0'
+    testCompile 'org.seleniumhq.selenium:selenium-java:3.4.0'
+    testCompile 'junit:junit:4.12'
+    testCompile 'info.cukes:cucumber-jvm:1.2.5'
+    testCompile 'info.cukes:cucumber-java:1.2.5'
+    testCompile 'info.cukes:cucumber-junit:1.2.5'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    testLogging {
+        // Make sure output from standard out or error is shown in Gradle output.
+        showStandardStreams = true
+    }
+}

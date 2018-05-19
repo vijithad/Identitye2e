@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Scenario: Get Vehicles should not read the txt files" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-05-19T05:51:06" hostname="15MBP-13042" time="0.003">
+  <properties/>
+  <testcase name="Given there are 4 xslx files and 6 csv files and a txt file containing 5 vehicles each" classname="Scenario: Get Vehicles should not read the txt files" time="0.001"/>
+  <testcase name="When get vehicles is called" classname="Scenario: Get Vehicles should not read the txt files" time="0.0"/>
+  <testcase name="Then only 50 vehicles are returned" classname="Scenario: Get Vehicles should not read the txt files" time="0.0"/>
+  <testcase name="classMethod" classname="Scenario: Get Vehicles should not read the txt files" time="0.097"/>
+  <system-out><![CDATA[----------xlsxFiles--4
+----------csvFiles--6
+----------textFiles--5
+----------implement me--
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
