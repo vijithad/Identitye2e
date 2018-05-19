@@ -18,15 +18,16 @@ public class GetVehicleInformationSteps {
         driver.get("https://www.gov.uk/get-vehicle-information-from-dvla");
     }
 
-    @When("^I Enter Vehicle Registration Number$")
-    public void enterVehicleRegistration() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        PageFactory.initElements(driver, ViewVehiclePage.class);
-        //  Log.info("Click action is perfromed on My Account link" );
-        // ViewVehiclePage.registrationNumber.sendKeys(map.get(0).get("username"));
-        ViewVehiclePage.registrationNumber.sendKeys("RF03MMK");
-        ViewVehiclePage.continueButton.click();
-    }
+//    @When("^I Enter Vehicle Registration Number$")
+//    public void enterVehicleRegistration() throws Throwable {
+//        // Write code here that turns the phrase above into concrete actions
+//        WebDriverWait wait = new WebDriverWait(driver, 10);
+//        PageFactory.initElements(driver, ViewVehiclePage.class);
+//        //  Log.info("Click action is perfromed on My Account link" );
+//        // ViewVehiclePage.registrationNumber.sendKeys(map.get(0).get("username"));
+//        ViewVehiclePage.registrationNumber.sendKeys("RF03MMK");
+//        ViewVehiclePage.continueButton.click();
+//    }
 
     @When("^I click on StartNow Link$")
     public void i_click_on_StartNow_Link() throws Throwable {
@@ -35,7 +36,6 @@ public class GetVehicleInformationSteps {
         //  Log.info("Click action is perfromed on My Account link" );
         wait.until(ExpectedConditions.elementToBeClickable(DVLAStartPage.startNowLink));
         DVLAStartPage.startNowLink.click();
-
     }
 
     @When("^I Enter Vehicle Registration Number and proceed$")
@@ -44,7 +44,7 @@ public class GetVehicleInformationSteps {
         PageFactory.initElements(driver, ViewVehiclePage.class);
         //  Log.info("Click action is perfromed on My Account link" );
         // ViewVehiclePage.registrationNumber.sendKeys(map.get(0).get("username"));
-        ViewVehiclePage.registrationNumber.sendKeys("RF03MMK");
+       // ViewVehiclePage.registrationNumber.sendKeys("RF03MMK");
         wait.until(ExpectedConditions.elementToBeClickable(ViewVehiclePage.continueButton));
         ViewVehiclePage.continueButton.click();
     }
