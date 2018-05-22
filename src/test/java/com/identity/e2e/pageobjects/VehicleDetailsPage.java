@@ -20,9 +20,8 @@ public class VehicleDetailsPage extends BaseClass {
 	@FindBy(how= How.CLASS_NAME, using="reg-mark")
 	public static WebElement registrationNumber;
 
-	@FindBy(how=How.XPATH, using="//ul[@class='list-summary margin-bottom-2']")
+	@FindBy(how=How.XPATH, using="//ul[@class='list-summary margin-bottom-2']//li[@class='list-summary-item']")
 	public static List<WebElement> summaryList;
-
 
 	@FindBy(how= How.XPATH, using="//input[@id='Correct_True']")
 	public static WebElement yes;

@@ -1,7 +1,7 @@
 package com.identity.e2e.model;
 
 import java.io.File;
-
+/* This is a service   */
 public class E2eFile {
 
     private final String name;

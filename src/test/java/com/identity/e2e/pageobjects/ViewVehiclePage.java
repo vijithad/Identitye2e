@@ -9,9 +9,11 @@ public class ViewVehiclePage extends BaseClass {
 
 	public ViewVehiclePage(WebDriver driver){
 		super(driver);
-	}    
+	}
 
-	
+	@FindBy(how= How.CLASS_NAME, using="heading-large")
+	public static WebElement page_heading;
+
 	@FindBy(how= How.XPATH, using="//form[@action='/ConfirmVehicle']//input[@id='Vrm']")
 	public static WebElement registrationNumber;
 
