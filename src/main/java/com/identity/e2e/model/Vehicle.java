@@ -1,5 +1,5 @@
 package com.identity.e2e.model;
-
+// Vehicle object to hold vehicle information required for the test
 public class Vehicle {
 
     private final String registration;

@@ -1,7 +1,7 @@
 package com.identity.e2e.cuke;
 
+import com.identity.e2e.helpers.Log;
 import com.identity.e2e.pageobjects.DVLAStartPage;
-import com.identity.e2e.pageobjects.ViewVehiclePage;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
@@ -16,26 +16,16 @@ public class navigatetoDVLASiteSteps {
     public void i_open_DVLA_Vehicle_View_website() throws Throwable {
         //This url can be mapped from properties file
         driver.get("https://www.gov.uk/get-vehicle-information-from-dvla");
+        Log.info("Opening Vehicle Information DVLA site");
     }
-
-//    @When("^I Enter Vehicle Registration Number$")
-//    public void enterVehicleRegistration() throws Throwable {
-//        // Write code here that turns the phrase above into concrete actions
-//        WebDriverWait wait = new WebDriverWait(driver, 10);
-//        PageFactory.initElements(driver, ViewVehiclePage.class);
-//        //  Log.info("Click action is perfromed on My Account link" );
-//        // ViewVehiclePage.registrationNumber.sendKeys(map.get(0).get("username"));
-//        ViewVehiclePage.registrationNumber.sendKeys("RF03MMK");
-//        ViewVehiclePage.continueButton.click();
-//    }
 
     @When("^I click on StartNow Link$")
     public void i_click_on_StartNow_Link() throws Throwable {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         PageFactory.initElements(driver, DVLAStartPage.class);
-        //  Log.info("Click action is perfromed on My Account link" );
         wait.until(ExpectedConditions.elementToBeClickable(DVLAStartPage.startNowLink));
         DVLAStartPage.startNowLink.click();
+        Log.info("Click action is performed on StartNow link" );
     }
 
 

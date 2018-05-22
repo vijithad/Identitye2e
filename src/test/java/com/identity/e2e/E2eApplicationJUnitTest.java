@@ -17,7 +17,7 @@ import static org.hamcrest.core.IsNull.notNullValue;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class E2eApplicationTest {
+public class E2eApplicationJUnitTest {
 
     @Test  // Junit test to cover the Get Excelfiles functionality of service bean
     public void testGetExcelFiles() throws Exception {

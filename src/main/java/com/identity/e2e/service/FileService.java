@@ -13,7 +13,10 @@ import java.util.stream.Collectors;
 
 @Service
 public class FileService {
-
+    /*
+      * Service to scan the directory for the requested file type and return all the files of that matching type mapping to E2eFile
+      * with details of name,extension,size,mimeType and File set.
+      */
     final MimetypesFileTypeMap mimeTypesMap = new MimetypesFileTypeMap();
 
     public List<E2eFile> getFiles(FileTypeEnum fileType, String directory) throws Exception {

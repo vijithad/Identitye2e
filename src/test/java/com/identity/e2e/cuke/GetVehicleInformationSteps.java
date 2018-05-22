@@ -1,8 +1,6 @@
 package com.identity.e2e.cuke;
 
 import com.identity.e2e.helpers.Log;
-import com.identity.e2e.pageobjects.DVLAStartPage;
-import com.identity.e2e.pageobjects.VehicleDetailsPage;
 import com.identity.e2e.pageobjects.ViewVehiclePage;
 import cucumber.api.java.en.When;
 import org.openqa.selenium.WebDriver;
@@ -20,12 +18,10 @@ public class GetVehicleInformationSteps {
     public void i_Enter_Vehicle_Registration_Number_and_proceed(String vehicle) throws Throwable {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         PageFactory.initElements(driver, ViewVehiclePage.class);
-        //WebDriverWait wait = new WebDriverWait(driver, 20);
-        Log.info("Vehicle Registration Page");
+        Log.info("Vehicle Registration Search Page");
         assertEquals("Enter the registration number of the vehicle", ViewVehiclePage.page_heading.getText());
-        //  Log.info("Click action is perfromed on My Account link" );
-        // ViewVehiclePage.registrationNumber.sendKeys(vehicle);
         ViewVehiclePage.registrationNumber.sendKeys(vehicle);
+        Log.info("Registration number entered:"+vehicle);
         wait.until(ExpectedConditions.elementToBeClickable(ViewVehiclePage.continueButton));
         ViewVehiclePage.continueButton.click();
     }
