@@ -22,6 +22,8 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'org.springframework.boot:spring-boot-starter-tomcat'
     compile group: 'com.opencsv', name: 'opencsv', version: '4.0'
+    compile group: 'log4j', name: 'log4j', version: '1.2.17'
+
     testCompile 'org.seleniumhq.selenium:selenium-server:2.44.0'
     testCompile 'org.seleniumhq.selenium:selenium-java:3.4.0'
     testCompile 'junit:junit:4.12'
